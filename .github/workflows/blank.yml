@@ -39,8 +39,8 @@ jobs:
         git branch --set-upstream-to=origin/master master
         
         product=r2s
-        sed -i '/CONFIG_PACKAGE_luci-app-openclash/d' product/${product}/product_config
-        echo "CONFIG_PACKAGE_luci-app-openclash=y" >> product/${product}/product_config
+        sudo sed -i '/CONFIG_PACKAGE_luci-app-openclash/d' product/${product}/product_config
+        echo "CONFIG_PACKAGE_luci-app-openclash=y" | sudo tee -a product/${product}/product_config
 
         ./build.sh -l r2s
         
