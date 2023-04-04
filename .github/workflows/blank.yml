@@ -30,6 +30,7 @@ jobs:
         cd openfros
         
         mkdir -p package/luci-app-openclash
+        (
         cd package/luci-app-openclash
         git init
         git remote add -f origin https://github.com/vernesong/OpenClash.git
@@ -37,10 +38,11 @@ jobs:
         echo "luci-app-openclash" >> .git/info/sparse-checkout
         git pull --depth 1 origin master
         git branch --set-upstream-to=origin/master master
+        )
         
         product=r2s
-        sudo sed -i '/CONFIG_PACKAGE_luci-app-openclash/d' product/${product}/product_config
-        echo "CONFIG_PACKAGE_luci-app-openclash=y" | sudo tee -a product/${product}/product_config
+        sed -i '/CONFIG_PACKAGE_luci-app-openclash/d' product/${product}/product_config
+        echo "CONFIG_PACKAGE_luci-app-openclash=y" >> product/${product}/product_config
 
         ./build.sh -l r2s
         
