@@ -24,7 +24,7 @@ jobs:
       uses: actions/checkout@main
       
     - name: build
-      run:
+      run: |
         git clone https://github.com/destan19/openfros.git 
         
         cd openfros
