@@ -40,7 +40,7 @@ jobs:
         
         product=r2s
         sed -i '/CONFIG_PACKAGE_luci-app-openclash/d' product/${product}/product_config
-	      echo "CONFIG_PACKAGE_luci-app-openclash=y" >> product/${product}/product_config
+        echo "CONFIG_PACKAGE_luci-app-openclash=y" >> product/${product}/product_config
 
         ./build.sh -l r2s
         
