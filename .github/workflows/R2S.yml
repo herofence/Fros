@@ -11,7 +11,7 @@
 #
 
 
-name: Build OpenWrt
+name: R2S
 
 on:
   workflow_dispatch:
