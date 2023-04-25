@@ -32,9 +32,9 @@ jobs:
         
         cd openfros
         
-        mkdir -p package/passwall
+        mkdir -p package/luci-app-passwall
         (
-        cd package/passwall
+        cd package/luci-app-passwall
         git init
         src-git https://github.com/kenzok8/small-package.get
         git config core.sparsecheckout true
