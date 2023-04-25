@@ -34,15 +34,15 @@ jobs:
         
         mkdir -p package/openwrt-passwall
         (
-        cd package/luci-app-passwall
+        cd package/openwrt-passwall
         git init
         git remote add -f origin https://github.com/xiaorouji/openwrt-passwall.git
         git config core.sparsecheckout true
-        echo "luci-app-passwall" >> .git/info/sparse-checkout
+        echo "openwrt-passwall" >> .git/info/sparse-checkout
         git pull --depth 1 origin master
         git branch --set-upstream-to=origin/master master
         
-        pushd luci-app-passwall/tools/po2lmo
+        pushd openwrt-passwall/tools/po2lmo
         make && sudo make install
         popd
         )
