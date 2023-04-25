@@ -34,7 +34,7 @@ jobs:
         
         mkdir -p package/openwrt-passwall
         (
-        cd package/openwrt-passwall
+        cd package/passwall
         git init
         src-git passwall https://github.com/xiaorouji/openwrt-passwall
         git config core.sparsecheckout true
