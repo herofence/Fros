@@ -36,7 +36,7 @@ jobs:
         (
         cd package/luci-app-passwall
         git init
-        src-git https://github.com/kenzok8/small-package.get
+        git remote add -f origin https://github.com/kenzok8/small-package.get
         git config core.sparsecheckout true
         echo "luci-app-passwall" >> .git/info/sparse-checkout
         git pull --depth 1 origin master
