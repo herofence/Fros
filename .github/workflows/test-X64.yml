@@ -1,5 +1,5 @@
 #CI项目名
-name: X64-Lede
+name: test-X64
 
 on:
   #手动编译
