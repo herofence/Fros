@@ -16,4 +16,4 @@ git clone --depth=1 --single-branch https://github.com/sirpdboy/luci-theme-kucat
 git clone --depth=1 --single-branch --branch "luci" https://github.com/xiaorouji/openwrt-passwall.git ./pw_luci
 git clone --depth=1 --single-branch --branch "packages" https://github.com/xiaorouji/openwrt-passwall.git ./pw_packages
 #其它应用
-git clone --depth=1 --single-branch https://github.com/ifantasyw/openwrt-packages.git
+#git clone --depth=1 --single-branch https://github.com/ifantasyw/openwrt-packages.git
