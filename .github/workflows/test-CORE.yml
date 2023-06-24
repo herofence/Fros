@@ -88,9 +88,8 @@ jobs:
 
       - name: 自定义脚本
         run: |
-          ./build.sh -l x86_64
           cd ./owrt
-
+          build.sh -l x86_64
           $GITHUB_WORKSPACE/Scripts/Settings.sh
 
           cd ./package
