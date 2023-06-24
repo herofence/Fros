@@ -7,9 +7,6 @@ CONFIG_TARGET_ROOTFS_EXT4FS=n
 CONFIG_PACKAGE_ipv6helper=y
 CONFIG_PACKAGE_ip6tables-extra=y
 CONFIG_PACKAGE_ip6tables-mod-nat=y
-#主题
-CONFIG_PACKAGE_luci-app-design-config=y
-CONFIG_PACKAGE_luci-app-argon-config=y
 #广告屏蔽大师
 CONFIG_PACKAGE_luci-app-adbyby-plus=n
 #定时重启
