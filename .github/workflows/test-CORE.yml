@@ -89,17 +89,16 @@ jobs:
       - name: 自定义脚本
         run: |
           cd ./owrt
-          build.sh -l x86_64
           $GITHUB_WORKSPACE/Scripts/Settings.sh
 
           cd ./package
-
           $GITHUB_WORKSPACE/Scripts/Plugins.sh
    
       - name: 自定义设置
         run: |
           cd ./owrt
-
+          build.sh -l x86_64
+          
           rm -rf ./tmp* ./.config*
           cat $GITHUB_WORKSPACE/Config/$OWRT_TARGET.txt $GITHUB_WORKSPACE/Config/General.txt >> .config
 
