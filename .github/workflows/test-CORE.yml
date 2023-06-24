@@ -104,6 +104,8 @@ jobs:
           cat $GITHUB_WORKSPACE/Config/$OWRT_TARGET.txt $GITHUB_WORKSPACE/Config/General.txt >> .config
 
           $GITHUB_WORKSPACE/Scripts/Extras.sh
+          
+          $GITHUB_WORKSPACE/Scripts/Build.sh
 
           make defconfig
 
