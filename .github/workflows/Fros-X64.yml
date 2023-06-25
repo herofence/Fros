@@ -12,7 +12,7 @@ permissions: write-all
 jobs:
   owrt_config:
     #调用公用编译核心test-CORE.yml
-    uses: ./.github/workflows/test-CORE.yml
+    uses: ./.github/workflows/Fros-core.yml
     with:
       #编译平台，X64包含X86
       OWRT_TARGET: X64
