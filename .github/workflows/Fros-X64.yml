@@ -1,5 +1,5 @@
 #CI项目名
-name: test-X64
+name: Fros-X64
 
 on:
   #手动编译
