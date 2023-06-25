@@ -105,8 +105,6 @@ jobs:
 
           $GITHUB_WORKSPACE/Scripts/Extras.sh        
                     
-          $GITHUB_WORKSPACE/Scripts/Build.sh -i         
-                    
           make defconfig
 
       - name: 清理工具
