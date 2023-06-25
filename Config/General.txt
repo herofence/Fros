@@ -13,8 +13,6 @@ CONFIG_PACKAGE_luci-app-adbyby-plus=n
 CONFIG_PACKAGE_luci-app-autoreboot=y
 #磁盘管理
 CONFIG_PACKAGE_luci-app-diskman=y
-#防火墙
-CONFIG_PACKAGE_luci-app-firewall=y
 #网络代理
 CONFIG_PACKAGE_luci-app-passwall=y
 #UPNP重定向
@@ -98,3 +96,4 @@ CONFIG_PACKAGE_luci-app-vsftpd=n
 #CONFIG_PACKAGE_luci-app-fros=y
 #冲突项
 CONFIG_PACKAGE_dnsmasq=n
+CONFIG_PACKAGE_luci-app-firewall=n
