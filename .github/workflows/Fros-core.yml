@@ -99,13 +99,13 @@ jobs:
       - name: 自定义设置
         run: |
           cd ./owrt
-              
-          $GITHUB_WORKSPACE/Scripts/Build.sh -i     
-              
+                        
           rm -rf ./tmp* ./.config*
           cat $GITHUB_WORKSPACE/Config/$OWRT_TARGET.txt $GITHUB_WORKSPACE/Config/General.txt >> .config
 
           $GITHUB_WORKSPACE/Scripts/Extras.sh        
+                    
+          $GITHUB_WORKSPACE/Scripts/Build.sh -i         
                     
           make defconfig
 
