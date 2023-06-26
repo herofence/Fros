@@ -17,6 +17,6 @@ git clone --depth=1 --single-branch --branch "packages" https://github.com/xiaor
 git clone --depth=1 --single-branch https://github.com/lisaac/luci-app-diskman.git
 #Autoreboot
 git clone --depth=1 --single-branch https://github.com/dazhaolear/luci-app-autorebootnew.git
-
-
+#Lucky
+git clone --depth=1 --single-branch https://github.com/gdy666/luci-app-lucky.git
 
