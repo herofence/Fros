@@ -13,7 +13,7 @@ git clone --depth=1 --single-branch https://github.com/gngpp/luci-app-design-con
 #Passwall
 git clone --depth=1 --single-branch --branch "luci" https://github.com/xiaorouji/openwrt-passwall.git ./pw_luci
 git clone --depth=1 --single-branch --branch "packages" https://github.com/xiaorouji/openwrt-passwall.git ./pw_packages
-#Ddiskman
+#Diskman
 git clone --depth=1 --single-branch https://github.com/lisaac/luci-app-diskman.git
 #Autoreboot
 git clone --depth=1 --single-branch https://github.com/f8q8/luci-app-autoreboot.git
