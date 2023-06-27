@@ -18,5 +18,5 @@ git clone --depth=1 --single-branch https://github.com/lisaac/luci-app-diskman.g
 #Autoreboot
 git clone --depth=1 --single-branch https://github.com/dazhaolear/luci-app-autorebootnew.git
 #Lucky
-git clone --depth=1 --single-branch https://github.com/gdy666/luci-app-lucky.git
+#git clone --depth=1 --single-branch https://github.com/gdy666/luci-app-lucky.git
 
