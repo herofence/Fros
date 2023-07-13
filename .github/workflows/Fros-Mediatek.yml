@@ -16,8 +16,6 @@ jobs:
     with:
       #编译平台
       OWRT_TARGET: Mediatek
-      #默认设备
-      OWRT_TYPE: GL-MT3000 NX30-PRO Q30_PRO 360T7 CT3003 WR30U
       #默认主题
       OWRT_THEME: design
       #默认主机名
