@@ -16,6 +16,8 @@ jobs:
     with:
       #编译平台
       OWRT_TARGET: Mediatek
+      #默认设备
+      OWRT_TYPE: redmi_ac2100
       #默认主题
       OWRT_THEME: design
       #默认主机名
