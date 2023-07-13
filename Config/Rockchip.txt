@@ -1,4 +1,4 @@
-#
+#R2S R4S
 # Automatically generated file; DO NOT EDIT.
 # OpenWrt Configuration
 #
