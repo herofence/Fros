@@ -16,6 +16,8 @@ jobs:
     with:
       #编译平台，X64包含X86
       OWRT_TARGET: X64
+      #默认设备
+      OWRT_TYPE:X86_X64
       #默认主题
       OWRT_THEME: design
       #默认主机名
