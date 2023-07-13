@@ -1,4 +1,4 @@
-#
+#GL-MT3000 NX30-PRO Q30_PRO 360T7 CT3003 WR30U
 # Automatically generated file; DO NOT EDIT.
 # OpenWrt Configuration
 #
