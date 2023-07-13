@@ -16,6 +16,8 @@ jobs:
     with:
       #编译平台
       OWRT_TARGET: Ipq807x
+      #默认设备
+      OWRT_TYPE：xiaomi_ax3600
       #默认主题
       OWRT_THEME: design
       #默认主机名
