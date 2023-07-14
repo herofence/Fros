@@ -149,9 +149,7 @@ jobs:
           tag_name: ${{env.OWRT_TARGET}}_${{env.OWRT_SOURCE}}_${{env.OWRT_DATE}}
           files: ./owrt/upload/*.*
           body: |
-            这是测试平台！
-
-
+            固件包含Fros上网行为管理、IPV6
             源码：${{env.OWRT_SOURCE}}
             平台：${{env.OWRT_TARGET}}
             设备：${{env.OWRT_TYPE}}
