@@ -2,7 +2,6 @@
 # Automatically generated file; DO NOT EDIT.
 # OpenWrt Configuration
 #
-CONFIG_PACKAGE_luci-app-passwall=y
 CONFIG_MODULES=y
 CONFIG_HAVE_DOT_CONFIG=y
 CONFIG_HOST_OS_LINUX=y
@@ -4793,8 +4792,8 @@ CONFIG_LUCI_CSSTIDY=y
 # CONFIG_PACKAGE_ebtables-nft is not set
 # CONFIG_PACKAGE_fwknop is not set
 # CONFIG_PACKAGE_fwknopd is not set
-CONFIG_PACKAGE_ip6tables-extra=y
-CONFIG_PACKAGE_ip6tables-mod-nat=y
+# CONFIG_PACKAGE_ip6tables-extra is not set
+# CONFIG_PACKAGE_ip6tables-mod-nat is not set
 # CONFIG_PACKAGE_ip6tables-nft is not set
 # CONFIG_PACKAGE_ip6tables-zz-legacy is not set
 # CONFIG_PACKAGE_iptables-mod-checksum is not set
