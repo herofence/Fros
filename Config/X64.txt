@@ -1,4 +1,8 @@
 #X86 X64
+#网络代理
+CONFIG_PACKAGE_luci-app-passwall=y
+#易有云插件
+CONFIG_PACKAGE_luci-app-quickstart=y
 CONFIG_TARGET_x86=y
 CONFIG_TARGET_x86_64=y
 CONFIG_TARGET_x86_64_DEVICE_generic=y
