@@ -3,6 +3,8 @@
 CONFIG_PACKAGE_luci-app-passwall=y
 #易有云插件
 CONFIG_PACKAGE_luci-app-quickstart=y
+#docker容器管理
+CONFIG_PACKAGE_luci-app-dockerman=y
 CONFIG_TARGET_x86=y
 CONFIG_TARGET_x86_64=y
 CONFIG_TARGET_x86_64_DEVICE_generic=y
