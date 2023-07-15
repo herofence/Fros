@@ -1,11 +1,7 @@
-#X86 X64
+#
 # Automatically generated file; DO NOT EDIT.
 # OpenWrt Configuration
 #
-CONFIG_PACKAGE_luci-app-quickstart=y
-CONFIG_PACKAGE_luci-app-upnp=y
-CONFIG_PACKAGE_luci-app-dockerman=y
-CONFIG_PACKAGE_luci-app-passwall=y
 CONFIG_MODULES=y
 CONFIG_HAVE_DOT_CONFIG=y
 CONFIG_HOST_OS_LINUX=y
