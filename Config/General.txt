@@ -1,4 +1,12 @@
-#
+#增加IPV6
+CONFIG_PACKAGE_ip6tables-extra=y
+CONFIG_PACKAGE_ip6tables-mod-nat=y
+#UPNP重定向
+CONFIG_PACKAGE_luci-app-upnp=y
+#内网设备唤醒
+CONFIG_PACKAGE_luci-app-wol=y
+#内网穿透
+CONFIG_PACKAGE_luci-app-zerotier=y
 CONFIG_MODULES=y
 CONFIG_HAVE_DOT_CONFIG=y
 CONFIG_HOST_OS_LINUX=y
