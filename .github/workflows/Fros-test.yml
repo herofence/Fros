@@ -95,9 +95,7 @@ jobs:
           cd ./package
           
           $GITHUB_WORKSPACE/Scripts/Plugins.sh
-          
-          $GITHUB_WORKSPACE/Scripts/build.sh -l x86_64
-   
+                      
       - name: 自定义设置
         run: |
           cd ./owrt
@@ -105,8 +103,10 @@ jobs:
           rm -rf ./tmp* ./.config*
           cat $GITHUB_WORKSPACE/Config/$OWRT_TARGET.txt $GITHUB_WORKSPACE/Config/General.txt >> .config
 
-          $GITHUB_WORKSPACE/Scripts/Extras.sh        
-                    
+          $GITHUB_WORKSPACE/Scripts/Extras.sh    
+          
+          $GITHUB_WORKSPACE/Scripts/build.sh -l x86_64
+           
           make defconfig
 
       - name: 清理工具
