@@ -159,7 +159,7 @@ jobs:
       - name: 删除旧版本
         uses: dev-drprasad/delete-older-releases@master
         with:
-          keep_latest: 4
+          keep_latest: 6
           delete_tags: true
 
       - name: 删除旧工作流
