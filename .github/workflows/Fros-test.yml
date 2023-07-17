@@ -86,7 +86,7 @@ jobs:
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
-      - name: 自定义脚本
+      - name: 自定义软件库
         run: |
           cd ./owrt
           
