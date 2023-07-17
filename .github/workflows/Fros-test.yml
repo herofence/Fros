@@ -98,9 +98,7 @@ jobs:
                       
       - name: 生成配置文件
         run: |
-          cd ./owrt
-
-          $GITHUB_WORKSPACE/Scripts/Extras.sh    
+          cd ./owrt  
            
           ./build.sh -l x86_64
 
