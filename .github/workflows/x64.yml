@@ -9,7 +9,7 @@ env:
   x64_THEME: design  #默认主题
   x64_IP: 192.168.2.1  #默认IP地址
   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-  x64_URL: https://github.com/herofence/fros-source.git
+  x64_URL: https://github.com/openfros/fros.git
 
 permissions: write-all
 
@@ -86,8 +86,6 @@ jobs: #执行项目
           $GITHUB_WORKSPACE/Scripts/Extras.sh
                  
           make defconfig
-          
-          ./build.sh -i
           
       - name: 清理工具链
         run: |
