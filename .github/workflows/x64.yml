@@ -84,6 +84,8 @@ jobs: #执行项目
           
           $GITHUB_WORKSPACE/Scripts/Extras.sh
           
+          ./build.sh -i
+          
           make defconfig
       - name: 清理工具链
         run: |
