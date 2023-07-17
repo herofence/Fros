@@ -101,11 +101,11 @@ jobs:
           cd ./owrt
           
           rm -rf ./tmp* ./.config*
-          cat $GITHUB_WORKSPACE/Config/$OWRT_TARGET.txt $GITHUB_WORKSPACE/Config/General.txt >> .config
+          cat $GITHUB_WORKSPACE/Config/test.txt >> ./product/x86_64/product_config
 
           $GITHUB_WORKSPACE/Scripts/Extras.sh    
            
-          make defconfig
+          ./build.sh -l x86_64
 
       - name: 清理工具
         run: |
