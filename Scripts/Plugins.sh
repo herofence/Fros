@@ -15,3 +15,5 @@ git clone --depth=1 --single-branch --branch "luci" https://github.com/xiaorouji
 git clone --depth=1 --single-branch --branch "packages" https://github.com/xiaorouji/openwrt-passwall.git ./pw_packages
 #Diskman
 git clone --depth=1 --single-branch https://github.com/lisaac/luci-app-diskman.git
+#upnp
+git clone --depth=1 --single-branch https://github.com/msylgj/luci-app-upnp.git
