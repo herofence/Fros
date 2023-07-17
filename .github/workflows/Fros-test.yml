@@ -99,10 +99,6 @@ jobs:
       - name: 生成配置文件
         run: |
           cd ./owrt
-          
-          rm -rf ./tmp* ./.config*
-          cat $GITHUB_WORKSPACE/Config/test.txt >> ./product/x86_64/product_config
-          cat $GITHUB_WORKSPACE/Config/test.txt >> .config
 
           $GITHUB_WORKSPACE/Scripts/Extras.sh    
            
