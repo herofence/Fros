@@ -96,7 +96,7 @@ jobs:
           
           $GITHUB_WORKSPACE/Scripts/Plugins.sh
                       
-      - name: 自定义设置
+      - name: 生成配置文件
         run: |
           cd ./owrt
           
