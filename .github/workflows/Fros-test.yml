@@ -107,30 +107,6 @@ jobs:
            
           ./build.sh -l x86_64
 
-      - name: 清理工具
-        run: |
-          cd ./owrt
-
-          make dirclean
-
-      - name: 下载软件包
-        run: |
-          cd ./owrt
-
-          make download -j$(nproc)
-
-      - name: 编译固件
-        run: |
-          cd ./owrt
-
-          make -j$(nproc) || make -j1 V=s
-
-          echo "======================="
-          df -h
-          echo "======================="
-          du -h --max-depth=1
-          echo "======================="
-
       - name: 编译软件
         run: |
           cd ./owrt && mkdir ./upload
