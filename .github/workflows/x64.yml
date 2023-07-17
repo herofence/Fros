@@ -18,6 +18,10 @@ jobs: #执行项目
     name: x64固件云编译
     runs-on: ubuntu-latest
     steps: #步骤
+    
+      - name: 检查项目
+        uses: actions/checkout@v3
+     
       - name: 初始化环境
         env:
           DEBIAN_FRONTEND: noninteractive
@@ -46,8 +50,7 @@ jobs: #执行项目
           echo "OWRT_PW=$OWRT_PW" >> $GITHUB_ENV
           echo "OWRT_IP=$OWRT_IP" >> $GITHUB_ENV
 
-      - name: 检查项目
-        uses: actions/checkout@v3
+
 
       - name: 检查脚本
         run: |
