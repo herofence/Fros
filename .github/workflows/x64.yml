@@ -113,7 +113,7 @@ jobs: #执行项目
           du -h --max-depth=1 ./bin
           echo "======================="
 
-      - name: 编译软件包
+      - name: 导出配置文件
         run: |
           export x64_TYPE=$(sed -n "1{s/^#//;s/\r$//;p;q}" $GITHUB_WORKSPACE/Config/$x64_TARGET.txt)
           export x64_DATE=$(TZ=UTC-8 date +"%y.%m.%d_%H.%M.%S")
