@@ -84,10 +84,11 @@ jobs: #执行项目
           cat $GITHUB_WORKSPACE/Config/$x64_TARGET.txt $GITHUB_WORKSPACE/Config/General.txt >> .config
           
           $GITHUB_WORKSPACE/Scripts/Extras.sh
+                 
+          make defconfig
           
           ./build.sh -i
           
-          make defconfig
       - name: 清理工具链
         run: |
           cd ./x64
