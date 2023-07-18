@@ -1,4 +1,4 @@
-name: x64  #CI项目名
+name: frosx64  #CI项目名
 
 on: #触发条件
   workflow_dispatch:  #手动编译
