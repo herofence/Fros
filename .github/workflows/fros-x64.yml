@@ -79,7 +79,7 @@ jobs: #执行项目
         run: |
           cd ./x64
 
-      ./build.sh -l x86_64
+          ./build.sh -l x86_64
 
       - name: 导出配置文件
         run: |
