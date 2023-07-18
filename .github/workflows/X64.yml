@@ -1,5 +1,5 @@
 #CI项目名
-name: X64-Lede
+name: X64
 
 on:
   #手动编译
@@ -25,4 +25,4 @@ jobs:
       #默认地址
       OWRT_IP: 192.168.2.1
       #默认源码
-      OWRT_URL: https://github.com/coolsnowwolf/lede.git
+      OWRT_URL: https://github.com/herofence/fros-source.git
