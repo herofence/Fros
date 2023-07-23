@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#luci
+git clone --depth=1 --single-branch https://github.com/openwrt/luci.git
 #Linkease
 git clone --depth=1 --single-branch https://github.com/linkease/istore.git
 git clone --depth=1 --single-branch https://github.com/linkease/nas-packages.git
