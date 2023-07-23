@@ -19,6 +19,9 @@ git clone --depth=1 --single-branch --branch "packages" https://github.com/xiaor
 git clone --depth=1 --single-branch https://github.com/lisaac/luci-app-diskman.git
 #upnp
 git clone --depth=1 --single-branch https://github.com/msylgj/luci-app-upnp.git
+#docker
+git clone --depth=1 --single-branch https://github.com/lisaac/luci-lib-docker.git
+git clone --depth=1 --single-branch https://github.com/lisaac/luci-app-dockerman.git
 #Open Clash
 #git clone --depth=1 --single-branch --branch "dev" https://github.com/vernesong/OpenClash.git
 #预置OpenClash内核和GEO数据
