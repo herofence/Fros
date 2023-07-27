@@ -20,3 +20,5 @@ git clone --depth=1 --single-branch --branch "packages" https://github.com/xiaor
 #docker
 #git clone --depth=1 --single-branch https://github.com/lisaac/luci-lib-docker.git
 #git clone --depth=1 --single-branch https://github.com/lisaac/luci-app-dockerman.git
+#Fros
+git clone --depth=1 --single-branch https://github.com/openfros/fros.git
