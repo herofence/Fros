@@ -1,5 +1,5 @@
 #!/bin/bash
-删除冲突的插件
+#删除冲突的插件
 rm -rf ./build_dir/target-x86_64_musl/root-x86/etc/hotplug.d/ntp/25-dnsmasqsec
 rm -rf ./build_dir/target-x86_64_musl/root-x86/etc/init.d/dnsmasq
 rm -rf ./build_dir/target-x86_64_musl/root-x86/etc/uci-defaults/50-dnsmasq-migrate-ipset.sh
