@@ -18,3 +18,5 @@ git clone --depth=1 --single-branch https://github.com/lisaac/luci-app-diskman.g
 #Dockerman
 git clone --depth=1 --single-branch https://github.com/lisaac/luci-app-dockerman.git
 git clone --depth=1 --single-branch https://github.com/lisaac/luci-lib-docker.git
+#upnp
+git clone --depth=1 --single-branch https://github.com/msylgj/luci-app-upnp.git
