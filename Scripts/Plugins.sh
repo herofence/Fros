@@ -17,6 +17,3 @@ git clone --depth=1 --single-branch --branch "luci" https://github.com/xiaorouji
 git clone --depth=1 --single-branch --branch "packages" https://github.com/xiaorouji/openwrt-passwall.git ./pw_packages
 #Diskman
 git clone --depth=1 --single-branch https://github.com/lisaac/luci-app-diskman.git
-#docker
-git clone --depth=1 --single-branch https://github.com/lisaac/luci-lib-docker.git
-git clone --depth=1 --single-branch https://github.com/lisaac/luci-app-dockerman.git
