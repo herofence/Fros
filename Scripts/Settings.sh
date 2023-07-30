@@ -1,6 +1,7 @@
 #!/bin/bash
 #删除冲突的插件
-rm -rf $(find ./build_dir/target-x86_64_musl/root-x86/ -type d -regex ".*\dnsmasq*")
+rm -rf -v $(find -name dnsmasq*")
+rm -rf -v $(find -type d dnsmasq*")
 #删除冲突插件
 rm -rf $(find ./feeds/luci/ -type d -regex ".*\(argon\|design\).*")
 #修改默认主题
