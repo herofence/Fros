@@ -5,4 +5,3 @@ CONFIG_TARGET_x86_64_DEVICE_generic=y
 #额外组件
 CONFIG_GRUB_IMAGES=y
 CONFIG_VMDK_IMAGES=y
-Root filesystem partition size=512
