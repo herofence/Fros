@@ -1,14 +1,6 @@
 #!/bin/bash
 #删除冲突的插件
-rm -rf ./build_dir/target-x86_64_musl/root-x86/etc/hotplug.d/ntp/25-dnsmasqsec
-rm -rf ./build_dir/target-x86_64_musl/root-x86/etc/init.d/dnsmasq
-rm -rf ./build_dir/target-x86_64_musl/root-x86/etc/uci-defaults/50-dnsmasq-migrate-ipset.sh
-rm -rf ./build_dir/target-x86_64_musl/root-x86/etc/uci-defaults/50-dnsmasq-migrate-resolv-conf-auto.sh
-rm -rf ./build_dir/target-x86_64_musl/root-x86/usr/lib/dnsmasq/dhcp-script.sh
-rm -rf ./build_dir/target-x86_64_musl/root-x86/usr/sbin/dnsmasq
-rm -rf ./build_dir/target-x86_64_musl/root-x86/usr/share/acl.d/dnsmasq_acl.json
-rm -rf ./build_dir/target-x86_64_musl/root-x86/usr/share/dnsmasq/dhcpbogushostname.conf
-rm -rf ./build_dir/target-x86_64_musl/root-x86/usr/share/dnsmasq/rfc6761.conf
+rm -rf $(find ./build_dir/target-x86_64_musl/root-x86/ -type d -regex ".*\dnsmasq*")
 #删除冲突插件
 rm -rf $(find ./feeds/luci/ -type d -regex ".*\(argon\|design\).*")
 #修改默认主题
