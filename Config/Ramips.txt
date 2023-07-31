@@ -1,4 +1,4 @@
-#redmi_ac2100
+#redmi_ac2100 R3G K2P newifi3
 CONFIG_TARGET_ramips=y
 CONFIG_TARGET_ramips_mt7621=y
 CONFIG_TARGET_ramips_mt7621_DEVICE_xiaomi_redmi-router-ac2100=y
