@@ -20,3 +20,5 @@ git clone --depth=1 --single-branch https://github.com/lisaac/luci-app-dockerman
 git clone --depth=1 --single-branch https://github.com/lisaac/luci-lib-docker.git
 #upnp
 git clone --depth=1 --single-branch https://github.com/msylgj/luci-app-upnp.git
+#usb打印服务器
+git clone --depth=1 --single-branch https://github.com/Dboykey/luci-app-usb-printer.git
