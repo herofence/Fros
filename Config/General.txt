@@ -12,10 +12,12 @@ CONFIG_DEFAULT_dnsmasq-full=y
 CONFIG_PACKAGE_dnsmasq_full_dhcp=y
 CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
 CONFIG_PACKAGE_dnsmasq=n
+#USB打印服务器
+CONFIG_PACKAGE_kmod-usb-printer=y
+CONFIG_PACKAGE_luci-app-usb-printer=y
 #第三方应用
 CONFIG_PACKAGE_luci-app-passwall=y
 CONFIG_PACKAGE_luci-app-upnp=y
-CONFIG_PACKAGE_luci-app-usb-printer=y
 CONFIG_PACKAGE_luci-app-quickstart=y
 CONFIG_PACKAGE_luci-app-diskman=y
 CONFIG_PACKAGE_luci-app-dockerman=y
