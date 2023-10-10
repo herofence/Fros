@@ -23,6 +23,7 @@ on:
       OWRT_IP:
         required: true
         type: string
+
 env:
   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
   OWRT_TARGET: ${{inputs.OWRT_TARGET}}
@@ -38,35 +39,27 @@ jobs:
     steps:
       - name: 检查项目
         uses: actions/checkout@main
-        
-      - name: 检查磁盘空间
-        uses: jlumbroso/free-disk-space@main
-        with:
-          tool-cache: false
-          dotnet: true
-          android: true
-          haskell: true
-          swap-storage: true
-          docker-images: true
-          large-packages: true
 
       - name: 初始化环境
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
+          docker rmi $(docker images -q)
           sudo -E apt -yqq update
+          sudo -E apt -yqq purge $(sed -n "1{s/\r$//g;p;q}" $GITHUB_WORKSPACE/Depends.txt)
           sudo -E apt -yqq full-upgrade
-          sudo -E apt -yqq install $(sed "{s/\r$//g;p;q}" $GITHUB_WORKSPACE/Depends.txt)
+          sudo -E apt -yqq install $(sed -n "2{s/\r$//g;p;q}" $GITHUB_WORKSPACE/Depends.txt)
           sudo -E apt -yqq autoremove --purge
           sudo -E apt -yqq autoclean
           sudo -E apt -yqq clean
           sudo -E systemctl daemon-reload
           sudo -E timedatectl set-timezone "Asia/Shanghai"
+          sudo -E rm -rf $(sed -n "3{s/\r$//g;p;q}" $GITHUB_WORKSPACE/Depends.txt)
 
       - name: 初始化参数
         run: |
           export OWRT_DATE=$(TZ=UTC-8 date +"%y.%m.%d_%H.%M.%S")
-          export OWRT_SOURCE=$(echo $OWRT_URL | cut -d '/' -f 5)
+          export OWRT_SOURCE=$(echo $OWRT_URL | cut -d '/' -f 5-)
           export OWRT_TYPE=$(sed -n "1{s/^#//;s/\r$//;p;q}" $GITHUB_WORKSPACE/Config/$OWRT_TARGET.txt)
 
           echo "OWRT_SOURCE=$OWRT_SOURCE" >> $GITHUB_ENV
@@ -155,7 +148,7 @@ jobs:
           tag_name: ${{env.OWRT_TARGET}}_${{env.OWRT_SOURCE}}_${{env.OWRT_DATE}}
           files: ./owrt/upload/*.*
           body: |
-            这是个平台固件包，内含多个设备！
+            包含docker、passwall、IPV6、打印机驱动
 
             源码：${{env.OWRT_SOURCE}}
             平台：${{env.OWRT_TARGET}}
