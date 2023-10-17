@@ -9,6 +9,7 @@ CONFIG_DEFAULT_dnsmasq-full=y
 CONFIG_PACKAGE_ip6tables-extra=y
 CONFIG_PACKAGE_ip6tables-mod-nat=y
 CONFIG_PACKAGE_luci-app-zerotier=y
+CONFIG_PACKAGE_dnsmasq=n
 CONFIG_PACKAGE_dnsmasq-full=y
 CONFIG_PACKAGE_dnsmasq_full_dhcp=y
 CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
