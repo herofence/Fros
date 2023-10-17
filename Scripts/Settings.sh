@@ -1,7 +1,7 @@
 #!/bin/bash
 #删除dnsmasq插件
-rm -rf -v $(find ./ -name "dnsmasq*")
-rm -rf -v $(find ./ -type d 'dnsmasq*')
+#rm -rf -v $(find ./ -name "dnsmasq*")
+#rm -rf -v $(find ./ -type d 'dnsmasq*')
 #删除冲突插件
 rm -rf -v $(find ./feeds/luci/ -type d -regex ".*\(argon\|design\).*")
 #修改默认主题
